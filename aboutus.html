@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - BrightSpark Hire Consultancy Solutions</title>
+    <link rel="icon" type="image/png" href="/images/favicon.webp" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="BrightSpark Hire Consultancy Solutions" />
+    <meta
+      name="keywords"
+      content="hospitality jobs, hotel jobs United Kingdom, hotel jobs India, hospitality recruitment, hospitality training, BrightSpark Hire"
+    />
+    <meta
+      name="description"
+      content="Learn about BrightSpark Hire’s mission to transform hospitality careers. Trusted by employers and job seekers across the United Kingdom & India."
+    />
+
+    <link rel="canonical" href="https://brightsparkhire.com/aboutus" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brightsparkhire.com/aboutus" />
+    <meta
+      property="og:title"
+      content="About Us - BrightSpark Hire Consultancy Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Learn about BrightSpark Hire’s mission to transform hospitality careers. Trusted by employers and job seekers across the United Kingdom & India."
+    />
+    <meta
+      property="og:image"
+      content="https://brightsparkhire.com/images/BrightSpark-Hire-OG-Image.webp"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="About Us - BrightSpark Hire Consultancy Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn about BrightSpark Hire’s mission to transform hospitality careers. Trusted by employers and job seekers across the United Kingdom & India."
+    />
+    <meta
+      name="twitter:image"
+      content="https://brightsparkhire.com/images/BrightSpark-Hire-OG-Image.webp"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BrightSpark Hire Consultancy Solutions",
+        "url": "https://brightsparkhire.com",
+        "logo": "https://brightsparkhire.com/images/BrightSpark-Hire-OG-Image.webp",
+        "description": "BrightSpark Hire connects hospitality professionals with global career opportunities through training, certification, and guaranteed job placements.",
+        "foundingDate": "2023",
+        "founder": {
+          "@type": "Person",
+          "name": "Bhanu Prakash"
+        },
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Baker Street",
+            "addressLocality": "London",
+            "postalCode": "NW1 6XE",
+            "addressCountry": "GB"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Balanagar, Kukatpally",
+            "postalCode": "500037",
+            "addressCountry": "IN"
+          }
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+44 7526555725",
+            "contactType": "customer support",
+            "areaServed": ["GB"],
+            "availableLanguage": ["English"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91 8464051009",
+            "contactType": "customer support",
+            "areaServed": ["IN"],
+            "availableLanguage": ["English", "Hindi"]
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "support@brightsparkhire.com",
+            "contactType": "support",
+            "areaServed": ["GB", "IN"],
+            "availableLanguage": ["English"]
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/brightsparkhire",
+          "https://www.linkedin.com/company/brightsparkhire",
+          "https://twitter.com/brightsparkhire"
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      h2 {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .about {
+        margin: 40px auto;
+        padding: 32px;
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+      }
+
+      .about p {
+        margin-bottom: 18px;
+        color: var(--text);
+      }
+
+      .about ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+
+      .about li {
+        margin-bottom: 8px;
+      }
+      #whychooseus {
+        list-style: none;
+      }
+      .faq-item {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        transition: var(--transition);
+      }
+
+      .faq-question {
+        background: var(--bg-soft);
+        padding: 12px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        position: relative;
+      }
+
+      .faq-question::after {
+        content: "+";
+        position: absolute;
+        right: 16px;
+        font-size: 18px;
+      }
+
+      .faq-item.active .faq-question::after {
+        content: "-";
+      }
+
+      .faq-answer {
+        display: none;
+        padding: 12px 16px;
+        background: var(--card);
+        border-top: 1px solid var(--border);
+      }
+
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+
+      .team {
+        margin-top: 32px;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .team-member {
+        background: var(--bg-soft);
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid var(--border);
+        transition: var(--transition);
+      }
+
+      .team-member:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+      }
+
+      .team-member img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
+          flex-direction: column;
+          background: var(--card);
+          padding: 12px;
+          border-radius: var(--radius);
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          box-shadow: var(--shadow);
+        }
+
+        .menu.show {
+          display: flex;
+        }
+
+        .hamburger {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">BS</div>
+          <a href="/index" id="brandHeading">
+            <h1>BrightSpark Hire Consultancy Solutions</h1></a
+          >
+        </div>
+        <button class="hamburger menutoggle" aria-label="Menu">☰</button>
+        <nav class="menu">
+          <a href="/index">Home</a>
+          <a href="/jobslisting">Jobs</a>
+          <a href="/trainingprogram">Training</a>
+          <a href="/aboutus">About Us</a>
+          <a href="/whychooseus">Why Choose Us</a>
+          <a href="/contact">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <div class="overlay"></div>
+
+    <main class="container">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>
+          At <strong>BrightSpark Hire Consultancy Solutions</strong>, we believe
+          in creating real opportunities for individuals aspiring to build a
+          career in the hospitality industry. Based in the United Kingdom, we
+          specialize in connecting job seekers with leading hotels, agencies,
+          and employers across London and beyond.
+        </p>
+        <p>
+          We go beyond just job placement—we prepare you for success. With our
+          hospitality training programs, including industry-standard tools such
+          as Opera PMS, Cloud and other essential systems, you’ll gain the
+          skills and confidence needed to excel in your role. Our training comes
+          with certifications recognized by employers, giving you a competitive
+          edge.
+        </p>
+        <p>
+          What sets us apart is our
+          <strong>Job Guarantee Program</strong>. We ensure that every candidate
+          who joins us secures employment within 90 days of application. From
+          the moment you begin your journey with us, our dedicated team supports
+          you every step of the way—training, mentoring, interview preparation,
+          and direct connections to employers.
+        </p>
+        <p>
+          Whether you are seeking part-time or full-time roles, we are committed
+          to guiding you until you land your dream job.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+          To empower individuals with the skills, confidence, and opportunities
+          they need to succeed in the United Kingdom hospitality industry.
+        </p>
+
+        <h3>Our Vision</h3>
+        <p>
+          A future where every passionate job seeker finds the right career path
+          with the right guidance and guaranteed opportunities.
+        </p>
+
+        <h3>Our Services</h3>
+        <ul>
+          <li>
+            <strong>Hospitality Training</strong> – Hands-on training with
+            industry tools like Opera Cloud.
+          </li>
+          <li>
+            <strong>Certification Programs</strong> – Gain employer-recognized
+            certificates that boost your CV.
+          </li>
+          <li>
+            <strong>Guaranteed Job Placement</strong> – Secure a part-time or
+            full-time job in the UK within 90 days.
+          </li>
+          <li>
+            <strong>Ongoing Career Support</strong> – We guide and support you
+            until you are successfully employed.
+          </li>
+        </ul>
+
+        <h3>How It Works</h3>
+        <ul>
+          <li><strong>Apply Online</strong> – Submit your application.</li>
+          <li>
+            <strong>Get Certified</strong> – Build a strong CV with globally
+            recognized credentials.
+          </li>
+          <li>
+            <strong>Get Hired</strong> – We connect you with hotels & agencies
+            in London—job guaranteed.
+          </li>
+        </ul>
+
+        <h3>Why Choose Us?</h3>
+        <ul id="whychooseus">
+          <li>✅ Job Guarantee in 90 Days</li>
+          <li>✅ Training on Opera PMS & other hospitality tools</li>
+          <li>✅ Strong ties with agencies & hotels in London</li>
+          <li>✅ Industry-recognized certifications</li>
+          <li>✅ Support until you land your job</li>
+        </ul>
+
+        <h3>Frequently Asked Questions (FAQ)</h3>
+        <div class="faq">
+          <div class="faq-item">
+            <div class="faq-question">1. What kind of jobs do you offer?</div>
+            <div class="faq-answer">
+              We provide part-time and full-time opportunities in the
+              hospitality sector, including roles in hotels, restaurants, and
+              agencies across London.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              2. Do you really guarantee a job within 90 days?
+            </div>
+            <div class="faq-answer">
+              Yes! We have partnerships with leading hotels and recruitment
+              agencies in London. Once you complete your training and
+              certification, we ensure you are placed in a suitable role within
+              90 days of your application.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">3. What is Opera Cloud?</div>
+            <div class="faq-answer">
+              Opera Cloud (Property Management System) is a global hotel
+              software used by major hotels for reservations, check-ins,
+              billing, and customer management. Training on Opera PMS gives you
+              an advantage and makes you job-ready from day one.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">4. Who can apply?</div>
+            <div class="faq-answer">
+              Our program is open to:<br /><br />
+              • United Kingdom residents seeking part-time or full-time
+              hospitality jobs<br />
+              • International students and newcomers who want to start a
+              career<br />
+              • Anyone looking to gain practical training and certifications to
+              improve their job prospects
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              5. Do I need prior experience in hospitality?
+            </div>
+            <div class="faq-answer">
+              No prior experience is required. We provide complete training and
+              support to help beginners as well as those looking to upgrade
+              their skills.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              6. What certifications will I receive?
+            </div>
+            <div class="faq-answer">
+              You will receive industry-recognized certifications in hospitality
+              operations and systems (including Opera PMS), which are valued by
+              employers in the UK.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">7. How long does the training take?</div>
+            <div class="faq-answer">
+              Our training is short and intensive, designed to prepare you
+              quickly for the job market. The duration depends on your chosen
+              program, but most candidates complete it within a few weeks.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              8. Will you support me after training?
+            </div>
+            <div class="faq-answer">
+              Yes! Our team provides continuous support until you secure
+              employment. We help with CV preparation, interview training, and
+              connecting you with the right employers.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              9. Are there any fees for training and job placement?
+            </div>
+            <div class="faq-answer">
+              We provide training, certification, and guaranteed job placement
+              at affordable program fees. (You can add details here about
+              pricing and our team will contact you.)
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">10. How do I get started?</div>
+            <div class="faq-answer">
+              It’s simple:<br /><br />
+              1. Apply online through our website.<br />
+              2. Join our training and certification program.<br />
+              3. Get placed in a guaranteed job within 90 days!
+            </div>
+          </div>
+        </div>
+
+        <div class="team">
+          <h3>Our Team</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <!-- <img src="/images/bhanuprakash.webp" alt="Founder" /> -->
+              <h4>Bhanu Prakash</h4>
+              <p>Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container foot-grid">
+        <div>
+          <div class="brand" style="margin-bottom: 10px">
+            <div class="logo">BS</div>
+            <span>BrightSpark Hire Consultancy Solutions</span>
+          </div>
+          <p>
+            Connecting talent with hotels and events while training future
+            leaders
+          </p>
+        </div>
+        <div>
+          <strong>UK Office</strong>
+          <p class="muted">London</p>
+          <p>Phone: +44 7526555725</p>
+        </div>
+        <div>
+          <strong>India Office</strong>
+          <p class="muted">Balanagar, Hyderabad, 500037</p>
+          <p>Phone: +91 8464051009</p>
+        </div>
+        <div>
+          <strong>Contact</strong>
+          <p>
+            Email:
+            <a href="mailto:support@brightsparkhire.com"
+              >support@brightsparkhire.com</a
+            >
+          </p>
+        </div>
+        <div>
+          <strong>Links</strong>
+          <p>
+            <a href="/jobslisting">Jobs</a> ·
+            <a href="/trainingprogram">Training</a> ·
+            <a href="/contact">Contact</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container foot-bottom">
+        <span class="muted">© 2025 BrightSpark Hire Consultancy Solutions</span>
+        <div class="foot-links">
+          <a href="/termsandconditions">Terms & Conditions</a>
+          <a href="/privacypolicy">Privacy Policy</a>
+          <span id="footerBadge" class="badge" title="Guarantee"
+            >Job Guarantee</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // FAQ toggle functionality
+      document.querySelectorAll(".faq-question").forEach((q) => {
+        q.addEventListener("click", () => {
+          const item = q.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

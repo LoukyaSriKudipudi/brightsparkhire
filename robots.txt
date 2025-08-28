@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Don't index admin or unnecessary files (if any)
+Disallow: /admin/
+Disallow: /server/
+Disallow: /config/
+
+# Allow all important pages
+Allow: /about
+Allow: /why-us
+Allow: /faqs
+Allow: /contact
+
+# Disallow Privacy and Terms from being indexed but allow links to be followed
+Disallow: /privacy
+Disallow: /terms
+
+Sitemap: https://brightsparkhire.com/sitemap.xml
